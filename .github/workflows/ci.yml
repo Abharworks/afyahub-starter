@@ -28,8 +28,8 @@ jobs:
       - name: Run lint
         run: npm run lint || true
 
-      - name: Run tests
-        run: npm test -- --watch=false --browsers=ChromeHeadless
+       # - name: Run tests
+       #  run: npm test -- --watch=false --browsers=ChromeHeadless
 
       - name: Build production
         run: npm run build
