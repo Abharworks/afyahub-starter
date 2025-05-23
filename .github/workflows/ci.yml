@@ -28,8 +28,8 @@ jobs:
       - name: Run lint
         run: npm run lint || true
 
-       # - name: Run tests
-       #  run: npm test -- --watch=false --browsers=ChromeHeadless
+        # - name: Run tests
+        #  run: npm test -- --watch=false --browsers=ChromeHeadless
 
       - name: Build production
         run: npm run build
@@ -38,7 +38,7 @@ jobs:
         run: |
           nohup npm run serve:ssr:afya-hub -- --watch=false &
           sleep 10
-          curl --fail http://localhost:4200/ || exit 1
+          curl --fail http://localhost:4000/ || exit 1
 
   deploy:
     needs: build-and-test
