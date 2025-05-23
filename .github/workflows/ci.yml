@@ -37,7 +37,7 @@ jobs:
       - name: Serve SSR for smoke-test
         run: |
           nohup npm run serve:ssr:afya-hub -- --watch=false &
-          sleep 5
+          sleep 10
           curl --fail http://localhost:4200/ || exit 1
 
   deploy:
