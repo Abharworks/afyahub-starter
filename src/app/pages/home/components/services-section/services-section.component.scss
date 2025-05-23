@@ -1,0 +1,55 @@
+:host ::ng-deep {
+  .services-carousel {
+    .p-carousel-content {
+      position: relative;
+    }
+    .p-carousel-prev-button,
+    .p-carousel-next-button {
+      position: absolute;
+      bottom: -45px;
+      right: 10px;
+      background: var(--color-primary-default);
+      border-radius: var(--radius-full);
+      .p-button {
+        color: var(--color-white);
+        width: 48px;
+        height: 48px;
+        &:not(:disabled):hover {
+          color: var(--color-primary-default);
+        }
+      }
+      &.p-disabled {
+        background-color: transparent;
+        .p-button {
+          color: var(--text-primary-paragraph);
+        }
+      }
+    }
+
+    .carousel-next-button {
+      margin-right: 10px;
+    }
+    .p-carousel-prev-button {
+      margin-right: 55px;
+    }
+    .p-carousel-indicator-list {
+      justify-content: start;
+    }
+  }
+}
+
+[dir="rtl"] {
+  :host ::ng-deep {
+    .services-carousel {
+      .p-carousel-prev-button {
+        margin-right: 65px;
+      }
+      .p-carousel-next-button {
+        margin-right: 10px;
+      }
+      .p-carousel-indicator-list {
+        justify-content: end;
+      }
+    }
+  }
+}

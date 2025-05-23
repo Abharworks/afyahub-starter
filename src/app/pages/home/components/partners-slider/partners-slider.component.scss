@@ -1,0 +1,10 @@
+:host ::ng-deep {
+  .partners-carousel {
+    .p-carousel-prev-button,
+    .p-carousel-next-button {
+      .p-button {
+        background: var(--color-neutral-default);
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!-- Top menu -->
+<p-menubar [model]="topbarItems" class="topbar hidden lg:block">
+  <ng-template #item let-item let-root="root">
+    <a pRipple class="flex items-center p-menubar-item-link">
+      <img [src]="item.iconImage" class="h-[18px]" />
+      <span>{{ item.label | translate }}</span>
+    </a>
+  </ng-template>
+  <ng-template #end>
+    <button pButton type="button" class="p-button-link ml-2">
+      <img src="assets/images/icon-mic.svg" alt="mic icon" class="h-[18px]" />
+    </button>
+    <button pButton type="button" class="p-button-link ml-2">
+      <img
+        src="assets/images/icon-decrease.svg"
+        alt="mic icon"
+        class="h-[18px]"
+      />
+    </button>
+    <button pButton type="button" class="p-button-link ml-2">
+      <img
+        src="assets/images/icon-increase.svg"
+        alt="mic icon"
+        class="h-[18px]"
+      />
+    </button>
+    <button pButton type="button" class="p-button-link ml-2">
+      <img src="assets/images/icon-eye.svg" alt="mic icon" class="h-[18px]" />
+    </button>
+  </ng-template>
+</p-menubar>
+
+<!-- Main menu -->
+<p-menubar [model]="mainItems" class="main-navbar">
+  <ng-template #start>
+    <img
+      src="assets/images/logo.svg"
+      alt="logo"
+      class="h-[50px] hidden lg:block"
+    />
+    <img
+      src="assets/images/logo-mobile.svg"
+      alt="logo mobile"
+      class="h-[50px] block lg:hidden"
+    />
+  </ng-template>
+  <ng-template #item let-item let-root="root">
+    <a
+      pRipple
+      class="flex items-center p-menubar-item-link"
+      [href]="item.href"
+      *ngIf="item.href"
+      target="_blank"
+    >
+      <span>{{ item.label | translate }}</span>
+      <p-badge
+        *ngIf="item.badge"
+        [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
+        [value]="item.badge"
+      />
+      <i
+        *ngIf="item.items"
+        [ngClass]="['ml-auto pi', root ? 'pi-angle-down' : 'pi-angle-right']"
+      ></i>
+    </a>
+    <a
+      pRipple
+      class="flex items-center p-menubar-item-link"
+      [routerLink]="item.routerLink"
+      *ngIf="!item.href"
+    >
+      <span>{{ item.label | translate }}</span>
+      <p-badge
+        *ngIf="item.badge"
+        [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
+        [value]="item.badge"
+      />
+      <i
+        *ngIf="item.items"
+        [ngClass]="['ml-auto pi', root ? 'pi-angle-down' : 'pi-angle-right']"
+      ></i>
+    </a>
+  </ng-template>
+  <ng-template #end>
+    <!-- Search -->
+    <button
+      pButton
+      type="button"
+      class="p-button-link ml-2"
+      (click)="onSearchClick($event)"
+    >
+      <img
+        src="assets/images/icon-search.svg"
+        alt="{{ 'HEADER.BUTTONS.SEARCH' | translate }}"
+        class="h-[18px]"
+      />
+      <span class="ml-1 text-black hidden lg:block">
+        {{ "HEADER.BUTTON.SEARCH" | translate }}
+      </span>
+    </button>
+    <!-- Language toggle -->
+    <button
+      pButton
+      type="button"
+      class="p-button-link ml-2"
+      (click)="switchLang(dir === 'rtl' ? 'en' : 'ar')"
+    >
+      <img
+        src="assets/images/icon-translate.svg"
+        alt="{{
+          dir === 'rtl'
+            ? ('HEADER.BUTTONS.ENGLISH' | translate)
+            : ('HEADER.BUTTONS.ARABIC' | translate)
+        }}"
+        class="h-[18px]"
+      />
+      <span class="ml-1 text-black hidden lg:block">
+        {{
+          dir === "rtl"
+            ? ("HEADER.BUTTON.LANG_EN" | translate)
+            : ("HEADER.BUTTON.LANG_AR" | translate)
+        }}
+      </span>
+    </button>
+    <button pButton type="button" class="p-button-link ml-2 hidden">
+      <img
+        src="assets/images/icon-user.svg"
+        alt="{{ 'HEADER.BUTTON.LOGOUT' | translate }}"
+        class="h-[18px]"
+      />
+      <span class="ml-1 text-black hidden lg:block">
+        {{ "HEADER.BUTTON.LOGOUT" | translate }}
+      </span>
+    </button>
+  </ng-template>
+</p-menubar>

@@ -1,0 +1,205 @@
+@theme {
+  --color-sa-flag: rgb(7, 77, 49);
+  --color-white: rgb(255, 255, 255);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-neutral-100: rgb(243, 244, 246);
+  --color-primary-paragraph: rgb(56, 66, 80);
+  --color-neutral-primary: rgb(210, 214, 219);
+  --color-neutral-primary-hover: rgba(210, 214, 219, 0.8);
+  --color-primary-400: rgba(84, 192, 138, 1);
+  --color-menu: rgb(255, 255, 255);
+  --color-neutral-400: rgb(157, 164, 174);
+  --color-secondary-paragraph: rgb(108, 115, 127);
+  --color-default: rgb(22, 22, 22);
+  --color-default-hover: rgba(22, 22, 22, 0.8);
+  --color-oncolor-primary: rgb(255, 255, 255);
+  --color-oncolor-default: rgb(255, 255, 255);
+  --color-completed: rgb(27, 131, 84);
+  --color-neutral-200: rgb(229, 231, 235);
+  --color-card: rgb(255, 255, 255);
+  --color-brand-light: rgb(243, 252, 246);
+  --color-primary-sa-flag: rgb(20, 87, 58);
+  --color-display: rgb(31, 42, 55);
+  --color-neutral-50: rgb(249, 250, 251);
+  --color-brand-light: rgb(243, 252, 246);
+  --color-success-light: rgb(236, 253, 243); /* background */
+  --color-success-light-secondary: rgb(171, 239, 198); /* border */
+  --color-success: rgb(8, 93, 58); /* text */
+  --color-info-light: rgb(239, 248, 255);
+  --color-info-light-secondary: rgb(178, 221, 255);
+  --color-info: rgb(24, 73, 169);
+  --color-neutral-light: rgb(249, 250, 251);
+  --color-neutral-secondary: rgb(229, 231, 235);
+  --color-neutral: rgb(31, 42, 55);
+  --color-primary-default: rgb(27, 131, 84);
+  --color-body: rgb(249, 250, 251);
+  --color-body-hover: rgba(249, 250, 251, 0.8);
+  --color-neutral-default: rgb(243, 244, 246);
+  --color-oncolor-transparent-30: rgba(255, 255, 255, 0.3);
+  --color-transparent: rgba(255, 255, 255, 0);
+  --color-link-oncolor: rgb(255, 255, 255);
+  --color-link-oncolor-hovered: rgb(255, 255, 255);
+
+  --font-md-regular-font-family: "IbmPlexSansArabic-Regular", sans-serif;
+  --font-sm-medium-font-family: "IbmPlexSansArabic-Medium", sans-serif;
+  --font-md-medium-font-family: "IbmPlexSansArabic-Medium", sans-serif;
+  --font-xl-semibold-font-family: "IbmPlexSansArabic-SemiBold", sans-serif;
+  --font-xl-regular-font-family: "IbmPlexSansArabic-Regular", sans-serif;
+  --font-sm-bold-font-family: "IbmPlexSansArabic-Bold", sans-serif;
+  --font-lg-regular-font-family: "IbmPlexSansArabic-Regular", sans-serif;
+  --font-lg-bold-font-family: "IbmPlexSansArabic-Bold", sans-serif;
+  --font-xs-medium-font-family: "IbmPlexSansArabic-Medium", sans-serif;
+  --font-sm-regular-font-family: "IbmPlexSansArabic-Regular", sans-serif;
+  --font-sm-regular-underlined-font-family: "IbmPlexSansArabic-Regular",
+    sans-serif;
+  --font-sm-semibold-font-family: "IbmPlexSansArabic-SemiBold", sans-serif;
+
+  --text-md-regular-font-size: 16px;
+  --text-sm-medium-font-size: 14px;
+  --text-md-medium-font-size: 16px;
+  --text-xl-semibold-font-size: 60px;
+  --text-xl-regular-font-size: 20px;
+  --text-xl-bold-font-size: 30px;
+  --text-lg-regular-font-size: 48px;
+  --text-lg-bold-font-size: 18px;
+  --text-xs-medium-font-size: 12px;
+  --text-sm-regular-font-size: 14px;
+  --text-sm-regular-underlined-font-size: 14px;
+  --text-sm-semibold-font-size: 14px;
+
+  --text-md-regular-font-weight: 400;
+  --text-sm-medium-font-weight: 500;
+  --text-md-medium-font-weight: 500;
+  --display-xl-semibold-font-weight: 600;
+  --text-xl-regular-font-weight: 400;
+  --display-sm-bold-font-weight: 700;
+  --display-lg-regular-font-weight: 400;
+  --text-lg-bold-font-weight: 700;
+  --text-xs-medium-font-weight: 500;
+  --text-sm-regular-font-weight: 400;
+  --text-sm-regular-underlined-font-weight: 400;
+  --text-sm-semibold-font-weight: 600;
+
+  --text-md-regular-line-height: 24px;
+  --text-sm-medium-line-height: 20px;
+  --text-md-medium-line-height: 24px;
+  --display-xl-semibold-line-height: 72px;
+  --text-xl-regular-line-height: 30px;
+  --display-sm-bold-line-height: 38px;
+  --display-lg-regular-line-height: 60px;
+  --text-lg-bold-line-height: 28px;
+  --text-xs-medium-line-height: 18px;
+  --text-sm-regular-line-height: 20px;
+  --text-sm-regular-underlined-line-height: 20px;
+  --text-sm-semibold-line-height: 20px;
+
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+  --radius-lg: 16px;
+  --radius-md: 8px;
+
+  --spacing-sm: 6px;
+  /* -s-md-gap: 4px;
+    -s-md-padding: 12px; */
+  --spacing-none: 0px;
+  --spacing-xl: 16px;
+  --spacing-lg: 12px;
+  --spacing-md: 8px;
+  --spacing-md: 8px;
+  --spacing-xs: 4px;
+  --spacing-3xl: 24px;
+  --spacing-4xl: 32px;
+  --spacing-5xl: 40px;
+  --spacing-6xl: 48px;
+  --spacing-8xl: 80px;
+  /* -s-lg-gap: 4px;
+    -s-lg-padding: 16px; */
+  --card-card-lg-gap: 24px;
+  --link-link-sm-gap: 4px;
+
+  /* Override primeng styles */
+  --carousel-indicator-width: 16px;
+  --carousel-indicator-height: 16px;
+  --carousel-indicator-border-radius: 50%;
+}
+
+@layer theme {
+  .dga-neutral-primary {
+    color: var(--color-default);
+    background: var(--color-oncolor-default);
+    border: 1px solid var(--color-neutral-primary);
+  }
+}
+
+a.text-link-oncolor:hover {
+  text-decoration: underline;
+  color: var(--color-link-oncolor-hovered);
+}
+
+.p-button,
+.p-menubar-item-link {
+  border-radius: var(--radius-sm);
+}
+.p-button:not(:disabled):hover {
+  background: var(--color-body-hover);
+  border: 1px solid var(--color-default-hover);
+  color: var(--color-default-hover);
+}
+.p-button-link {
+  background: transparent;
+  border-color: transparent;
+  color: var(--p-button-link-color);
+}
+.p-button-link.border-oncolor-transparent-30 {
+  border-color: var(--color-oncolor-transparent-30);
+}
+
+.p-button-link:not(:disabled):hover {
+  background: var(--color-oncolor-transparent-30);
+  border-color: var(--color-white-40);
+  color: var(--p-button-link-hover-color);
+}
+
+.p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
+  color: var(--p-menubar-item-focus-color);
+  background: transparent;
+}
+
+.p-carousel-indicator-active .p-carousel-indicator-button {
+  background: var(--color-primary-default);
+}
+
+.p-card {
+  background: var(--color-card);
+  color: var(--color-display);
+  box-shadow: none;
+  border: 1px solid var(--color-neutral-primary);
+  border-radius: var(--radius-lg);
+}
+
+.p-tag {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+.p-tag-info {
+  background: var(--color-info-light);
+  color: var(--color-info);
+  border: 1px solid var(--color-info-light-secondary);
+}
+.p-tag-contrast {
+  background: var(--p-tag-contrast-background);
+  color: var(--p-tag-contrast-color);
+}
+.p-tag-success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+  border: 1px solid var(--color-success-light-secondary);
+}
+
+.p-tag-secondary {
+  background: var(--color-neutral-light);
+  border: 1px solid var(--color-neutral-secondary);
+  color: var(--color-neutralr);
+}

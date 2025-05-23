@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" # جذر المشروع
+    schedule:
+      interval: "weekly" # يومي، أسبوعي، شهري
+    open-pull-requests-limit: 5
+    # ignore:
+    #   - dependency-name: "tailwindcss"
+    #     versions: ["^4.1.4"]       # أمثلة لإهمال بعض الحزم

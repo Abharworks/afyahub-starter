@@ -1,0 +1,24 @@
+<section class="partners-section container mx-auto py-5xl px-lg lg:px-0">
+  <div class="partners-header mb-4">
+    <h2 class="font-bold text-xl-bold-font-size">
+      {{ "PARTNERS.TITLE" | translate }}
+    </h2>
+  </div>
+  <div class="partners-content mt-4">
+    <p-carousel
+      [value]="partners"
+      [numVisible]="9"
+      [numScroll]="1"
+      [responsiveOptions]="responsivePartnersOptions"
+      ngClass="partners-carousel"
+    >
+      <ng-template let-item #item>
+        <div class="border border-neutral-primary rounded-lg m-2 p-2">
+          <div class="size-fit mx-auto">
+            <img class="p-3" [src]="item.logo" alt="{{ item.name }}" />
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

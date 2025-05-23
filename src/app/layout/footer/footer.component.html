@@ -1,0 +1,134 @@
+<footer class="bg-sa-flag text-oncolor-primary">
+  <div class="container mx-auto pt-5xl pb-3xl px-lg lg:px-0">
+    <!-- Top links grid -->
+    <div
+      class="pt-xl pb-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3xl mb-6xl"
+    >
+      <!-- Overview -->
+      <div>
+        <h3 class="mb-lg border-b border-oncolor-transparent-30 pb-sm">
+          {{ "FOOTER.OVERVIEW" | translate }}
+        </h3>
+        <ul class="space-y-sm mt-sm">
+          <li *ngFor="let link of overviewLinks">
+            <a
+              [routerLink]="link.routerLink"
+              class="block text-link-oncolor text-sm-medium-font-size"
+            >
+              {{ "FOOTER.OVERVIEW_LINKS." + link.key | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Important links -->
+      <div>
+        <h3 class="mb-lg border-b border-oncolor-transparent-30 pb-sm">
+          {{ "FOOTER.IMPORTANT_LINKS" | translate }}
+        </h3>
+        <ul class="space-y-sm mt-sm">
+          <li *ngFor="let link of importantLinks">
+            <a
+              [routerLink]="link.routerLink"
+              class="block text-link-oncolor text-sm-medium-font-size"
+            >
+              {{ "FOOTER.IMPORTANT_LINKS_LIST." + link.key | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact & support -->
+      <div>
+        <h3 class="mb-lg border-b border-oncolor-transparent-30 pb-sm">
+          {{ "FOOTER.CONTACT_SUPPORT" | translate }}
+        </h3>
+        <ul class="space-y-sm mt-sm">
+          <li *ngFor="let link of contactLinks">
+            <a
+              [routerLink]="link.routerLink"
+              class="block text-link-oncolor text-sm-medium-font-size"
+            >
+              {{ "FOOTER.CONTACT_LINKS_LIST." + link.key | translate }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social & Accessibility -->
+      <div>
+        <h3 class="mb-lg border-b border-oncolor-transparent-30 pb-sm">
+          {{ "FOOTER.SOCIAL_MEDIA" | translate }}
+        </h3>
+        <div class="flex gap-xl mb-5xl">
+          <a
+            *ngFor="let icon of socialIcons"
+            [href]="icon.url"
+            target="_blank"
+            pButton
+            class="p-button-link border-oncolor-transparent-30"
+            [attr.title]="'FOOTER.SOCIAL.' + icon.key | translate"
+          >
+            <img
+              [src]="icon.icon"
+              [alt]="'FOOTER.SOCIAL.' + icon.key | translate"
+              class="w-[15px]"
+            />
+          </a>
+        </div>
+
+        <h3 class="mb-lg border-b border-oncolor-transparent-30 pb-sm">
+          {{ "FOOTER.ACCESSIBILITY_TOOLS" | translate }}
+        </h3>
+        <div class="flex gap-xl">
+          <button
+            *ngFor="let tool of accessibilityTools"
+            pButton
+            class="p-button-link border-oncolor-transparent-30"
+            [attr.aria-label]="tool.label | translate"
+          >
+            <img
+              [src]="tool.icon"
+              [alt]="tool.label | translate"
+              class="w-[15px]"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom strip -->
+    <div
+      class="py-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-3xl"
+    >
+      <!-- Left: links + texts -->
+      <div class="flex flex-col">
+        <div class="flex gap-xl mb-5xl">
+          <a href="#" class="underline">{{
+            "FOOTER.BOTTOM.SITEMAP" | translate
+          }}</a>
+          <a href="#" class="underline">{{
+            "FOOTER.BOTTOM.RSS" | translate
+          }}</a>
+          <a href="#" class="underline">{{
+            "FOOTER.BOTTOM.MOBILE_APP" | translate
+          }}</a>
+        </div>
+        <p class="font-bold">{{ "FOOTER.BOTTOM.ALL_RIGHTS" | translate }}</p>
+        <p class="mb-xl">
+          {{ "FOOTER.BOTTOM.DEVELOPED_BY" | translate }}
+          <a href="https://abharworks.com/" target="_blank" class="underline"
+            >Abharworks.com</a
+          >
+        </p>
+        <p>{{ "FOOTER.BOTTOM.LAST_MODIFIED" | translate }}</p>
+      </div>
+
+      <!-- Right: logos -->
+      <div class="flex items-center space-x-5xl mt-4 md:mt-0">
+        <img src="assets/images/placeholder-125x42.svg" alt="Platform Logo" />
+        <img src="assets/images/placeholder-125x42.svg" alt="Authority Logo" />
+      </div>
+    </div>
+  </div>
+</footer>

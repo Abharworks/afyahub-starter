@@ -1,0 +1,39 @@
+<section class="hero-section">
+  <div class="hero-content">
+    <p-carousel
+      [value]="heroItems"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      [responsiveOptions]="responsiveOptions"
+      showNavigators="false"
+    >
+      <ng-template let-item #item>
+        <div
+          class="hero-item"
+          style="background-image: linear-gradient(rgba(9, 42, 30, 0.8), rgba(9, 42, 30, 0.8)),
+          url('{{ item.backgroundImage }}');"
+        >
+          <div class="container mx-auto pt-5xl px-lg lg:px-0">
+            <div class="w-full lg:w-1/2">
+              <h3 class="text-xl-semibold-font-size mb-4 mt-[90px]">
+                {{ item.title | translate }}
+              </h3>
+              <p class="text-xl-regular-font-size mb-5xl">
+                {{ item.subtitle | translate }}
+              </p>
+              <button
+                class="dga-neutral-primary"
+                pButton
+                type="button"
+                routerLink="{{ item.link }}"
+              >
+                {{ item.linkText | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

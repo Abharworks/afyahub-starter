@@ -1,0 +1,164 @@
+<div class="container mx-auto py-5xl">
+  <!-- content.component.html -->
+
+  <!-- Breadcrumb -->
+  <nav class="flex text-sm text-secondary-paragraph mb-6">
+    <a routerLink="/" class="text-primary-paragraph hover:underline">{{
+      "CONTENT.breadcrumb.parent" | translate
+    }}</a>
+    <span class="mx-2">›</span>
+    <span class="font-semibold text-text-display">{{
+      "CONTENT.breadcrumb.current" | translate
+    }}</span>
+  </nav>
+
+  <!-- Page title & intro -->
+  <h1 class="font-bold text-3xl text-text-display mb-4">
+    {{ "CONTENT.page.title" | translate }}
+  </h1>
+  <p class="text-text-secondary-paragraph mb-8">
+    {{ "CONTENT.page.description" | translate }}
+  </p>
+
+  <hr class="border-neutral-primary mb-12" />
+
+  <!-- Section 1 -->
+  <section class="mb-12">
+    <h2 class="font-bold text-xl text-text-display mb-4">
+      {{ "CONTENT.section1.title" | translate }}
+    </h2>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section1.intro" | translate }}
+    </p>
+
+    <!-- ordered list with nested -->
+    <ol class="list-decimal list-inside space-y-2 mb-6">
+      <li class="mb-2">
+        {{ "CONTENT.lists.orderedItem" | translate }}
+        <ul class="list-disc list-inside ml-6 space-y-1 mt-2">
+          <li>{{ "CONTENT.lists.listItem" | translate }}</li>
+          <li>{{ "CONTENT.lists.listItem" | translate }}</li>
+          <li>{{ "CONTENT.lists.listItem" | translate }}</li>
+        </ul>
+      </li>
+      <li>{{ "CONTENT.lists.orderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.orderedItem" | translate }}</li>
+    </ol>
+
+    <!-- unordered list with nested -->
+    <ul class="list-disc list-inside space-y-2 mb-6">
+      <li>
+        {{ "CONTENT.lists.unorderedItem" | translate }}
+        <ul class="list-none list-inside ml-6 space-y-1 mt-2">
+          <li>{{ "CONTENT.lists.unorderedListItem" | translate }}</li>
+          <li>{{ "CONTENT.lists.unorderedListItem" | translate }}</li>
+          <li>{{ "CONTENT.lists.unorderedListItem" | translate }}</li>
+        </ul>
+      </li>
+      <li>{{ "CONTENT.lists.unorderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.unorderedItem" | translate }}</li>
+    </ul>
+
+    <!-- icon-prefixed list -->
+    <ul class="space-y-2 mb-6">
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="mb-12">
+    <h2 class="font-bold text-xl text-text-display mb-4">
+      {{ "CONTENT.section2.title" | translate }}
+    </h2>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section2.intro" | translate }}
+    </p>
+
+    <ol class="list-decimal list-inside space-y-2 mb-6">
+      <li>{{ "CONTENT.lists.orderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.orderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.orderedItem" | translate }}</li>
+    </ol>
+
+    <ul class="list-disc list-inside space-y-2 mb-6">
+      <li>{{ "CONTENT.lists.unorderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.unorderedItem" | translate }}</li>
+      <li>{{ "CONTENT.lists.unorderedItem" | translate }}</li>
+    </ul>
+
+    <ul class="space-y-2 mb-6">
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+      <li class="flex items-start">
+        <i class="pi pi-check-circle mr-2 text-primary-color"></i>
+        {{ "CONTENT.lists.iconItem" | translate }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="mb-12">
+    <h2 class="font-bold text-xl text-text-display mb-4">
+      {{ "CONTENT.section3.title" | translate }}
+    </h2>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section3.intro" | translate }}
+    </p>
+
+    <!-- Sub-section 1 -->
+    <h3 class="font-semibold text-lg mb-2">
+      {{ "CONTENT.section3.sub1.title" | translate }}
+    </h3>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section3.sub1.intro" | translate }}
+    </p>
+    <textarea
+      class="w-full h-32 border border-neutral-primary rounded p-4"
+      readonly
+      >{{ "CONTENT.section3.sub1.example" | translate }}</textarea
+    >
+
+    <!-- Sub-section 2 -->
+    <h3 class="font-semibold text-lg mt-8 mb-2">
+      {{ "CONTENT.section3.sub2.title" | translate }}
+    </h3>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section3.sub2.intro" | translate }}
+    </p>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="mb-12">
+    <h2 class="font-bold text-xl text-text-display mb-4">
+      {{ "CONTENT.section4.title" | translate }}
+    </h2>
+    <p class="text-text-secondary-paragraph mb-6">
+      {{ "CONTENT.section4.text" | translate }}
+    </p>
+
+    <p class="text-text-secondary-paragraph">
+      {{ "CONTENT.linksWithinText" | translate }}
+      <strong>{{ "CONTENT.standaloneLinks" | translate }}</strong>
+      <a href="#" class="underline">
+        {{ "CONTENT.linkExample" | translate }}
+      </a>
+    </p>
+  </section>
+</div>

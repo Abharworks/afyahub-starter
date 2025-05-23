@@ -1,0 +1,248 @@
+{
+  "HOME": {
+    "TITLE": "Welcome to AfyaHub",
+    "ABOUT": "Your digital gateway to seamless healthcare."
+  },
+  "HEADER": {
+    "TOPBAR": {
+      "CONDITION": "Cloudy",
+      "CITY": "Al-Riyadh"
+    },
+    "MENU": {
+      "HOME": "Home",
+      "ABOUT": "About",
+      "SERVICES": "Services",
+      "NEWS": "News",
+      "EDUCATION": "Education",
+      "EDUCATION_ITEMS": {
+        "EDUCATION": "Education",
+        "RESEARCH": "Research",
+        "ANNUAL_WELLNESS_EXAM": "Annual Wellness Exam"
+      },
+      "CONTACT": "Contact"
+    },
+    "BUTTON": {
+      "SEARCH": "Search",
+      "LANG_AR": "عربي",
+      "LANG_EN": "English",
+      "LOGOUT": "Logout"
+    }
+  },
+  "ICONS": {
+    "MIC": "Microphone",
+    "DECREASE": "Decrease text size",
+    "INCREASE": "Increase text size",
+    "VIEW": "Toggle high contrast"
+  },
+
+  "HERO": {
+    "ITEM1": {
+      "TITLE": "Welcome to AfyaHub",
+      "SUBTITLE": "Your digital gateway to seamless healthcare—find trusted clinics, book appointments, and manage your health journey all in one place.",
+      "LINK_TEXT": "Get Started"
+    },
+    "ITEM2": {
+      "TITLE": "Book Appointments",
+      "SUBTITLE": "Schedule visits with top-rated clinics and experienced practitioners at your convenience, directly through AfyaHub.",
+      "LINK_TEXT": "Book Now"
+    },
+    "ITEM3": {
+      "TITLE": "Discover Nearby Clinics",
+      "SUBTITLE": "Explore our network of certified clinics in your area and choose the best care for you and your family.",
+      "LINK_TEXT": "Explore Clinics"
+    }
+  },
+
+  "ABOUT": {
+    "TITLE": "About AfyaHub",
+    "TEXT": "AfyaHub is your one-stop portal for seamless access to clinic services, appointment scheduling, and healthcare resources. Discover trusted clinics, connect with expert practitioners, and take charge of your health journey with ease and confidence.",
+    "STATS": [
+      {
+        "TITLE": "Clinics",
+        "COUNT": "250+"
+      },
+      {
+        "TITLE": "Doctors",
+        "COUNT": "1,200+"
+      },
+      {
+        "TITLE": "Appointments Booked",
+        "COUNT": "75K+"
+      },
+      {
+        "TITLE": "Patients Served",
+        "COUNT": "500K+"
+      }
+    ]
+  },
+
+  "SERVICES": {
+    "HEADER": {
+      "TITLE": "Our Services",
+      "SUBTITLE": "Explore the full suite of offerings on AfyaHub—designed to simplify access to quality healthcare, whether you need a quick consultation or a comprehensive wellness plan.",
+      "VIEW_ALL": "View All Services"
+    },
+    "ITEMS": [
+      {
+        "TITLE": "Online Consultation",
+        "TAGS": ["Video Visit", "24/7"],
+        "DESCRIPTION": "Connect with a certified clinician from anywhere for non-emergency advice and follow-ups."
+      },
+      {
+        "TITLE": "Clinic Appointments",
+        "TAGS": ["In-Person", "All Specialties"],
+        "DESCRIPTION": "Find and book slots at partnered clinics across multiple specialties near you."
+      },
+      {
+        "TITLE": "Health Packages",
+        "TAGS": ["Preventive", "Customizable"],
+        "DESCRIPTION": "Choose from a range of screening and wellness packages tailored to your needs."
+      },
+      {
+        "TITLE": "Lab Services",
+        "TAGS": ["Home Sample", "Fast Results"],
+        "DESCRIPTION": "Order lab tests online and get sample collection at home with quick digital reports."
+      },
+      {
+        "TITLE": "Health Records",
+        "TAGS": ["Secure", "Portable"],
+        "DESCRIPTION": "Access and share your consolidated medical records anytime through your dashboard."
+      },
+      {
+        "TITLE": "Wellness Programs",
+        "TAGS": ["Fitness", "Nutrition"],
+        "DESCRIPTION": "Join personalized wellness and lifestyle programs curated by our experts."
+      }
+    ],
+    "BUTTON": {
+      "BUY_NOW": "Book Now",
+      "LEARN_MORE": "Learn More"
+    }
+  },
+
+  "NEWS": {
+    "HEADER": {
+      "TITLE": "AfyaHub News",
+      "SUBTITLE": "Stay up to date with the latest clinic openings, health tips, and AfyaHub announcements to help you navigate your care journey.",
+      "VIEW_ALL": "View All"
+    },
+    "ITEMS": [
+      {
+        "TITLE": "New Specialty Clinic Opens in Riyadh",
+        "DESCRIPTION": "AfyaHub welcomes its latest cardiology clinic located in the heart of Riyadh.",
+        "BUTTON": "Read More"
+      },
+      {
+        "TITLE": "AfyaHub Launches Telehealth Services",
+        "DESCRIPTION": "Connect with board-certified doctors from home—our new telehealth feature goes live this month.",
+        "BUTTON": "Learn More"
+      },
+      {
+        "TITLE": "5 Tips for Staying Healthy This Summer",
+        "DESCRIPTION": "Keep cool and safe with these practical health tips from AfyaHub’s expert clinicians.",
+        "BUTTON": "Read More"
+      }
+    ]
+  },
+
+  "PARTNERS": {
+    "TITLE": "Our Partners"
+  },
+
+  "FOOTER": {
+    "OVERVIEW": "Overview",
+    "IMPORTANT_LINKS": "Important links",
+    "CONTACT_SUPPORT": "Contact & support",
+    "SOCIAL_MEDIA": "Social Media",
+    "ACCESSIBILITY_TOOLS": "Accessibility Tools",
+    "OVERVIEW_LINKS": {
+      "ABOUT": "About AfyaHub",
+      "PRIVACY": "Privacy and terms of use",
+      "HOW_TO_USE": "How to use AfyaHub",
+      "NEWS_EVENTS": "News and events",
+      "SLA_STATS": "Service level agreement statistics"
+    },
+    "IMPORTANT_LINKS_LIST": {
+      "NATIONAL_SERVICE": "National service portal",
+      "OPEN_GOV_DATA": "Open government data",
+      "NATIONAL_STRATEGY": "National strategy for data & Artificial intelligence",
+      "OPEN_DATA_PORTAL": "Open data portal",
+      "E_PARTICIPATION": "E-Participation portal"
+    },
+    "CONTACT_LINKS_LIST": {
+      "CONTACT_US": "Contact us",
+      "ENGAGE_WITH_US": "Engage with us",
+      "SUBMIT_COMPLAINT": "Submit complaint",
+      "REPORT_CORRUPTION": "Report corruption"
+    },
+    "SOCIAL": {
+      "TWITTER": "Twitter",
+      "LINKEDIN": "LinkedIn",
+      "INSTAGRAM": "Instagram"
+    },
+    "BOTTOM": {
+      "SITEMAP": "Sitemap",
+      "RSS": "RSS",
+      "MOBILE_APP": "Mobile App",
+      "ALL_RIGHTS": "All Rights Reserved © 2025",
+      "DEVELOPED_BY": "Developed and Maintained by",
+      "LAST_MODIFIED": "Last Modified Date: 05/05/2025"
+    }
+  },
+
+  "CONTENT": {
+    "breadcrumb": {
+      "parent": "Link",
+      "current": "Link"
+    },
+    "page": {
+      "title": "Standard Content Page Example",
+      "description": "Here you can add a brief description of the content page. Usually this content page structure is used for standard content pages."
+    },
+    "section1": {
+      "title": "Section 1",
+      "intro": "This is an example of the paragraph style followed by the design system. The same style is consistent across all body text sections."
+    },
+    "section2": {
+      "title": "Section 2",
+      "intro": "This is an example of the paragraph style followed by the design system. The same style is consistent across all body text sections."
+    },
+    "section3": {
+      "title": "Section 3",
+      "intro": "When using forms, the standard form fields used are text fields which are typically used for short text input. Statuses of the form field are default, active, focused, error, hint, and disabled.",
+      "sub1": {
+        "title": "Sub Section 1",
+        "intro": "This is an example of the paragraph style followed by the design system.",
+        "example": "This is an example of the paragraph style followed by the design system."
+      },
+      "sub2": {
+        "title": "Sub Section 2",
+        "intro": "This is an example of the paragraph style followed by the design system.",
+        "example": "This is an example of the paragraph style followed by the design system."
+      }
+    },
+    "section4": {
+      "title": "Section 4",
+      "text": "This is an example of the paragraph style followed by the design system. The same style is consistent across all body text sections."
+    },
+    "lists": {
+      "orderedItem": "Ordered list item",
+      "unorderedItem": "Unordered list item",
+      "unorderedListItem": "Unordered list item",
+      "listItem": "List item",
+      "iconItem": "With Icon List Item"
+    },
+    "subsection1": {
+      "title": "Sub Section 1",
+      "intro": "This is an example of the paragraph style followed by the design system."
+    },
+    "subsection2": {
+      "title": "Sub Section 2",
+      "intro": "This is an example of the paragraph style followed by the design system."
+    },
+
+    "linksWithinText": "Links within a text body just like this example are underlined with a bold green color and",
+    "standaloneLinks": "standalone links",
+    "linkExample": "Link example"
+  }
+}
