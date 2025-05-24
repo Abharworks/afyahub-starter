@@ -2,11 +2,8 @@
 @use "tailwindcss";
 @use "./assets/dga-theme.css";
 
-.p-button {
-  &.p-button-primary {
-    background: var(--color-primary-default);
-    border: 1px solid var(--color-primary-400);
-  }
+:root {
+  --p-button-primary-background: var(--color-primary-default);
 }
 
 .p-carousel-indicator-button {
