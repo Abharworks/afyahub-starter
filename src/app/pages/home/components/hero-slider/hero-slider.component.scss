@@ -1,0 +1,24 @@
+.hero-section {
+  position: relative;
+  color: #fff;
+  .hero-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+    height: 100%;
+  }
+}
+
+// Override PrimeNG
+:host ::ng-deep {
+  .p-carousel-content-container {
+    position: relative;
+  }
+  .p-carousel-indicator-list {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 1;
+  }
+}

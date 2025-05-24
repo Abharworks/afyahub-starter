@@ -1,0 +1,56 @@
+.main-navbar {
+  .p-button-link,
+  .p-menubar-item-link {
+    padding: 24px 16px;
+    position: relative;
+    transition: 0.4s;
+    border: 0;
+    &::after {
+      height: 6px;
+      width: 80%;
+      border-radius: 2px 2px 0 0;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--color-primary-400);
+      content: "";
+      display: none;
+      transition: 0.4s;
+    }
+    &:hover,
+    &.active {
+      background: var(--color-primary-default);
+      color: var(--color-oncolor-default);
+      border: 0;
+
+      .text-black {
+        color: var(--color-oncolor-default);
+      }
+      img {
+        filter: invert(1);
+      }
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .p-menubar-mobile .p-iconwrapper svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.topbar {
+  .p-menubar {
+    background: var(--color-neutral-100);
+  }
+  .p-menubar-root-list
+    > .p-menubar-item
+    > .p-menubar-item-content
+    > .p-menubar-item-link {
+    padding: 8px 12px;
+  }
+}

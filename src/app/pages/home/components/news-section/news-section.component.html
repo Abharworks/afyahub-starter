@@ -1,0 +1,49 @@
+<section class="news-section py-5xl px-lg lg:px-0">
+  <div class="news-header container mx-auto mb-[32px] lg:px-md">
+    <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
+      <h2 class="font-bold text-xl-bold-font-size mb-[24px]">
+        {{ "NEWS.HEADER.TITLE" | translate }}
+      </h2>
+      <button
+        pButton
+        label="{{ 'NEWS.HEADER.VIEW_ALL' | translate }}"
+        class="ml-auto rtl:ml-0 rtl:mr-auto dga-neutral-primary"
+      ></button>
+    </div>
+    <p class="text-md-regular-font-size w-full md:w-4/6">
+      {{ "NEWS.HEADER.SUBTITLE" | translate }}
+    </p>
+  </div>
+
+  <div class="news-content container mx-auto">
+    <p-carousel
+      [value]="news"
+      [numVisible]="3"
+      [numScroll]="1"
+      [responsiveOptions]="responsiveNewsOptions"
+      ngClass="news-carousel"
+    >
+      <ng-template let-item #item>
+        <div class="news-card mx-2 mt-2 mb-4">
+          <p-card class="w-full">
+            <div class="img-wrap mb-4 rounded-md overflow-hidden">
+              <img [src]="item.thumbnail" [alt]="item.title" />
+            </div>
+            <h3 class="font-bold text-lg-bold-font-size text-black mb-2">
+              {{ item.title | translate }}
+            </h3>
+            <p class="text-black mb-4">
+              {{ item.describtion | translate }}
+            </p>
+            <button
+              pButton
+              [label]="item.buttonLabel | translate"
+              routerLink="{{ item.buttonLink }}"
+              class="p-button-primary mt-2"
+            ></button>
+          </p-card>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

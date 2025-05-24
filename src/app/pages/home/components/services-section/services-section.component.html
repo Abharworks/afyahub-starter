@@ -1,0 +1,64 @@
+<section class="services-section bg-neutral-50 py-5xl px-lg lg:px-0">
+  <div class="services-header container mx-auto mb-[32px] lg:px-md">
+    <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
+      <h2 class="font-bold text-xl-bold-font-size mb-[24px]">
+        {{ "SERVICES.HEADER.TITLE" | translate }}
+      </h2>
+      <button
+        pButton
+        label="{{ 'SERVICES.HEADER.VIEW_ALL' | translate }}"
+        routerLink="/content"
+        class="ml-auto rtl:ml-0 rtl:mr-auto dga-neutral-primary"
+      ></button>
+    </div>
+    <p class="text-md-regular-font-size w-full md:w-4/6">
+      {{ "SERVICES.HEADER.SUBTITLE" | translate }}
+    </p>
+  </div>
+
+  <div class="services-content container mx-auto">
+    <p-carousel
+      [value]="services"
+      [numVisible]="4"
+      [numScroll]="1"
+      [responsiveOptions]="responsiveServicesOptions"
+      ngClass="services-carousel"
+    >
+      <ng-template let-item #item>
+        <div
+          class="bg-white border border-neutral-primary rounded-lg mx-2 mt-2 mb-4 p-4"
+        >
+          <div
+            class="mb-[16px] icon-wrap bg-brand-light rounded-full size-[56px]"
+          >
+            <img
+              class="p-4"
+              [src]="item.icon"
+              alt="{{ item.title | translate }}"
+            />
+          </div>
+          <h3 class="mb-[16px] font-bold">{{ item.title | translate }}</h3>
+          <p class="mb-[16px]">{{ item.desc | translate }}</p>
+          <ng-container *ngFor="let tag of item.tags; let tagIndex = index">
+            <p-tag
+              [value]="tag | translate"
+              styleClass="mr-xs border {{ getSeverity(tagIndex) }}"
+            />
+          </ng-container>
+          <div class="mt-4">
+            <button
+              pButton
+              label="{{ 'SERVICES.BUTTON.LEARN_MORE' | translate }}"
+              class="mr-xl mb-sm rtl:mr-0 rtl:ml-xl dga-neutral-primary"
+            ></button>
+            <button
+              pButton
+              label="{{ 'SERVICES.BUTTON.BUY_NOW' | translate }}"
+              class="p-button-primary"
+            ></button>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

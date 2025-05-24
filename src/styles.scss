@@ -1,0 +1,24 @@
+@use "primeicons/primeicons.css";
+@use "tailwindcss";
+@use "./assets/dga-theme.css";
+
+.p-button {
+  &.p-button-primary {
+    background: var(--color-primary-default);
+    border: 1px solid var(--color-primary-400);
+  }
+}
+
+.p-carousel-indicator-button {
+  width: var(--carousel-indicator-width);
+  height: var(--carousel-indicator-height);
+  border-radius: var(--carousel-indicator-border-radius);
+}
+
+.p-menubar {
+  border: 0;
+  box-shadow: 4px 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-none);
+  color: var(--text-primary-paragraph);
+  padding: 0 var(--spacing-xl);
+}
